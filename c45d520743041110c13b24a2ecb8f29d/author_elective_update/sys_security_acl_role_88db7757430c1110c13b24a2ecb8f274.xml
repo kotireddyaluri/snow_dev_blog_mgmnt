@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-18 12:35:06</sys_created_on>
+        <sys_id>88db7757430c1110c13b24a2ecb8f274</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.sn_blog_management.author</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_security_acl display_value="">7bcb7757430c1110c13b24a2ecb8f26e</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_88db7757430c1110c13b24a2ecb8f274</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-18 12:35:06</sys_updated_on>
+        <sys_user_role display_value="sn_blog_management.author" name="sn_blog_management.author">ba0a77d3430c1110c13b24a2ecb8f2ad</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</application>
+        <file_path/>
+        <instance_id>8955cffb1c330110958b97982f2daacf</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_security_acl_role_88db7757430c1110c13b24a2ecb8f274</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-06-18 12:35:06</sys_created_on><sys_id>88db7757430c1110c13b24a2ecb8f274</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.sn_blog_management.author</sys_name><sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package><sys_policy/><sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope><sys_security_acl display_value="">7bcb7757430c1110c13b24a2ecb8f26e</sys_security_acl><sys_update_name>sys_security_acl_role_88db7757430c1110c13b24a2ecb8f274</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-06-18 12:35:06</sys_updated_on><sys_user_role display_value="sn_blog_management.author" name="sn_blog_management.author">ba0a77d3430c1110c13b24a2ecb8f2ad</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1258428282</payload_hash>
+        <record_name>.sn_blog_management.author</record_name>
+        <reverted_from/>
+        <source>045d520743041110c13b24a2ecb8f29f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-18 12:35:06</sys_created_on>
+        <sys_id>eaebf757430c1110c13b24a2ecb8f232</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18176cf4eea0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-18 12:35:06</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>26ebf7574c0c11103d64eb55dc59c032</update_guid>
+        <update_guid_history>26ebf7574c0c11103d64eb55dc59c032:-1258428282</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=".sn_blog_management.author">a99f3c2b438c1110c13b24a2ecb8f2c4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-18 17:30:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>66b091863c8f4d58a4ba63cadd01bc40</sys_id>
+        <sys_metadata>88db7757430c1110c13b24a2ecb8f274</sys_metadata>
+        <sys_name>.sn_blog_management.author</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_parent display_value="sn_blog_management_blog_post">7bcb7757430c1110c13b24a2ecb8f26e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_scope_delete display_value="">08fbee7fcad34dee82f3c0a762de72e4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_88db7757430c1110c13b24a2ecb8f274</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_88db7757430c1110c13b24a2ecb8f274">eaebf757430c1110c13b24a2ecb8f232</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

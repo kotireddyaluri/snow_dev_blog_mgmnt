@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-18 17:42:25</sys_created_on>
+        <sys_id>e6e141eb438c1110c13b24a2ecb8f2dd</sys_id>
+        <sys_name>sn_blog_management_blog_post.sn_blog_management.author</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_security_acl display_value="sn_blog_management_blog_post">b4ab7357430c1110c13b24a2ecb8f2c2</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_e6e141eb438c1110c13b24a2ecb8f2dd</sys_update_name>
+        <sys_user_role display_value="sn_blog_management.author" name="sn_blog_management.author">2730856b438c1110c13b24a2ecb8f2d3</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="sn_blog_management.author" name="sn_blog_management.author">2730856b438c1110c13b24a2ecb8f2d3</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-18 17:33:48</sys_created_on>
+        <sys_id>0240c56b438c1110c13b24a2ecb8f23c</sys_id>
+        <sys_name>2730856b438c1110c13b24a2ecb8f2d3</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_embedded_help_role_0240c56b438c1110c13b24a2ecb8f23c</sys_update_name>
+    </sys_embedded_help_role>
+</record_update>

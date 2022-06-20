@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Blog Management">8faeda4743041110c13b24a2ecb8f227</application>
+        <assessment/>
+        <device_type/>
+        <filter table="sn_blog_management_blog_post">authorDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item endquery="false" field="author" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>MyPosts</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sn_blog_management_blog_post</name>
+        <order>3</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-18 12:41:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>110df797430c1110c13b24a2ecb8f2e9</sys_id>
+        <sys_name>MyPosts</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_app_module_110df797430c1110c13b24a2ecb8f2e9</sys_update_name>
+        <timeline_page/>
+        <title>MyPosts</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

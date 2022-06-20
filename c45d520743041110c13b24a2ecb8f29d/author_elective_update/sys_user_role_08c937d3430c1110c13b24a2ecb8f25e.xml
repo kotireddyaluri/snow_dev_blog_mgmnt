@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>sn_blog_management.user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-18 12:26:21</sys_created_on>
+        <sys_id>08c937d3430c1110c13b24a2ecb8f25e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_blog_management.user</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_user_role_08c937d3430c1110c13b24a2ecb8f25e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-18 12:26:21</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</application>
+        <file_path/>
+        <instance_id>8955cffb1c330110958b97982f2daacf</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_user_role_08c937d3430c1110c13b24a2ecb8f25e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>sn_blog_management.user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-06-18 12:26:21</sys_created_on><sys_id>08c937d3430c1110c13b24a2ecb8f25e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sn_blog_management.user</sys_name><sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package><sys_policy/><sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope><sys_update_name>sys_user_role_08c937d3430c1110c13b24a2ecb8f25e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-06-18 12:26:21</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-28994984</payload_hash>
+        <record_name>sn_blog_management.user</record_name>
+        <reverted_from/>
+        <source>045d520743041110c13b24a2ecb8f29f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-18 12:26:21</sys_created_on>
+        <sys_id>dee97fd3430c1110c13b24a2ecb8f218</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18176c74bcd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-18 12:26:21</sys_updated_on>
+        <type>Role</type>
+        <update_guid>1ae97fd3360c1110bccd27471fc7f218</update_guid>
+        <update_guid_history>1ae97fd3360c1110bccd27471fc7f218:-28994984</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="sn_blog_management.user">e9f97fd3430c1110c13b24a2ecb8f2c6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-18 12:26:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>6362b655e86e48b0bf1fe21659b7cb49</sys_id>
+        <sys_metadata>08c937d3430c1110c13b24a2ecb8f25e</sys_metadata>
+        <sys_name>sn_blog_management.user</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_scope_delete display_value="">08fbee7fcad34dee82f3c0a762de72e4</sys_scope_delete>
+        <sys_update_name>sys_user_role_08c937d3430c1110c13b24a2ecb8f25e</sys_update_name>
+        <sys_update_version display_value="sys_user_role_08c937d3430c1110c13b24a2ecb8f25e">dee97fd3430c1110c13b24a2ecb8f218</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

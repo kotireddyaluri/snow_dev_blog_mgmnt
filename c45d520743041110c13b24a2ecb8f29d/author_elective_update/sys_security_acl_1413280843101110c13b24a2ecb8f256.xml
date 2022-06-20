@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Allow write for records in sn_blog_management_blog_post, for users with role sn_blog_management.admin.</description>
+        <name>sn_blog_management_blog_post</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-20 04:44:27</sys_created_on>
+        <sys_id>1413280843101110c13b24a2ecb8f256</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>sn_blog_management_blog_post</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_security_acl_1413280843101110c13b24a2ecb8f256</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-20 05:12:01</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</application>
+        <file_path/>
+        <instance_id>8955cffb1c330110958b97982f2daacf</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_security_acl_1413280843101110c13b24a2ecb8f256</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Allow write for records in sn_blog_management_blog_post, for users with role sn_blog_management.admin.</description><name>sn_blog_management_blog_post</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-06-20 04:44:27</sys_created_on><sys_id>1413280843101110c13b24a2ecb8f256</sys_id><sys_mod_count>5</sys_mod_count><sys_name>sn_blog_management_blog_post</sys_name><sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package><sys_policy/><sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope><sys_update_name>sys_security_acl_1413280843101110c13b24a2ecb8f256</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-06-20 05:12:01</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-165093709</payload_hash>
+        <record_name>sn_blog_management_blog_post</record_name>
+        <reverted_from/>
+        <source>045d520743041110c13b24a2ecb8f29f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-20 05:12:01</sys_created_on>
+        <sys_id>2fa9e48c43101110c13b24a2ecb8f284</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1817f865faf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-20 05:12:01</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>a7a9e48c4e1011108b620994efb8d084</update_guid>
+        <update_guid_history>a7a9e48c4e1011108b620994efb8d084:-165093709,02492c4ca31011101a05c3a5e3f77336:837385299,0b24208810101110debe1c0695971564:-165093709,f524ec487a10111089284a123f676c91:212769170,c114ac488d1011107fa6c37f89cf9d94:1647141318,bb532448331011104fe55c051a58ac9b:1465236991</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-20 05:12:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>1c472190555e49db955871a4f5e2b2e9</sys_id>
+        <sys_metadata>1413280843101110c13b24a2ecb8f256</sys_metadata>
+        <sys_name>sn_blog_management_blog_post</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_parent display_value="sn_blog_management_blog_post">c88e9a4743041110c13b24a2ecb8f247</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_scope_delete display_value="">08fbee7fcad34dee82f3c0a762de72e4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_1413280843101110c13b24a2ecb8f256</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_1413280843101110c13b24a2ecb8f256">2fa9e48c43101110c13b24a2ecb8f284</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

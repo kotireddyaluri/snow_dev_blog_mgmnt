@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="848e9a4743041110c13b24a2ecb8f212" label="Blog Post" max_length="40" name="sn_blog_management_blog_post" type="collection">
+        <element attributes="encode_utf8=false" label="Author" max_length="32" name="author" reference="sys_user" type="reference"/>
+        <element label="Body" max_length="65536" name="body" type="html"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="10" value="draft"/>
+                <element inactive_on_update="false" label="In Review" sequence="20" value="review"/>
+                <element inactive_on_update="false" label="Published" sequence="30" value="published"/>
+                <element inactive_on_update="false" label="Retired" sequence="40" value="retired"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Title" mandatory="true" max_length="100" name="title" type="string"/>
+        <index name="index">
+            <element name="author"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
