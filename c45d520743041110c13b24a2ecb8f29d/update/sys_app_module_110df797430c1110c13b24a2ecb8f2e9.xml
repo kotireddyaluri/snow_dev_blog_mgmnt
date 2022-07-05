@@ -26,14 +26,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>110df797430c1110c13b24a2ecb8f2e9</sys_id>
-        <sys_name>MyPosts</sys_name>
+        <sys_name>My Blog Posts</sys_name>
         <sys_overrides/>
         <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
         <sys_update_name>sys_app_module_110df797430c1110c13b24a2ecb8f2e9</sys_update_name>
         <timeline_page/>
-        <title>MyPosts</title>
+        <title>My Blog Posts</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

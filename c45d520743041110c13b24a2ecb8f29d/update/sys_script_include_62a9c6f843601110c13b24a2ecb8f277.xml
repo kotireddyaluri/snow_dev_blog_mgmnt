@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>sn_blog_management.BlogUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>BlogUtil</name>
+        <script><![CDATA[var BlogUtil = Class.create();
+BlogUtil.prototype = {
+    initialize: function() {
+    },
+	sayHello: function(){
+		return "Hello World!";
+	},
+
+    type: 'BlogUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-05 06:24:37</sys_created_on>
+        <sys_id>62a9c6f843601110c13b24a2ecb8f277</sys_id>
+        <sys_name>BlogUtil</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_script_include_62a9c6f843601110c13b24a2ecb8f277</sys_update_name>
+    </sys_script_include>
+</record_update>

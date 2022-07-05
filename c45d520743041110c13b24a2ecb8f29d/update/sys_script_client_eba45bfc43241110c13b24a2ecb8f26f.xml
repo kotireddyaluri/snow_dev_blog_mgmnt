@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>title</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>GetDuplicateTitle</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	//clear existing messages
+	g_form.clearMessages();
+	
+	//check if the same title exists
+	var util = new GlideAjax("BlogUtilAjax");
+	util.setScope("sn_blog_management_blog_post");
+	util.addParam("sysparam_name","titleExists");
+	util.addParam("sysparam_title",g_form.getValue("title"));
+	util.addParam("sysparam_author",g_user.userID);
+	util.addParam("sysparam_current",g_form.getUniqueValue());
+	util.getXML(sameTitle);
+}
+
+function sameTitle(response){
+	var sys_id = response.responseXML.documentElement.getAttribute("answer");
+	if("-1" != sys_id){
+		g_form.addErrorMessage('Warning: There is a <a href="/sn_blog_management_blog_post.do?sys_id='+ sys_id + '" target="_blank">Title</a>exists with the same title!');
+	}
+	else
+		g_form.addInfoMessage("Good to go");
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-05 12:06:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eba45bfc43241110c13b24a2ecb8f26f</sys_id>
+        <sys_name>GetDuplicateTitle</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_script_client_eba45bfc43241110c13b24a2ecb8f26f</sys_update_name>
+        <table>sn_blog_management_blog_post</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

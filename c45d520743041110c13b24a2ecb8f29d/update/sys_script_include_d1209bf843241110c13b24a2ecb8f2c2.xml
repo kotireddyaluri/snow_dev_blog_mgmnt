@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_blog_management.BlogUtilAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>BlogUtilAjax</name>
+        <script><![CDATA[var BlogUtilAjax = Class.create();
+BlogUtilAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	titleExists: function(){
+		var title = this.getParameter("sysparam_title");
+		var author = this.getParameter("sysparam_author");
+		var current = this.getParameter("sysparam_current") || "-1";
+		
+		var blog = new GlideRecord("sn_blog_management_blog_post");
+		blog.addQuery("title",title);
+		blog.addQuery("sys_id","!=",current);
+		if("" != author)
+			blog.addQuery("author",author);
+		blog.query();
+		if(blog.next())
+			return blog.getValue("sys_id");
+		return "-1";
+	},
+	
+	getTitleDetails: function(){
+		var table = this.getParameter("sysparam_table");
+		var sys_id = this.getParameter("sysparam_id");
+		var column = this.getParameter("sysparam_column");
+		var operation = this.getParameter("sysparam_operation");
+		
+		if(operation == "read"){
+			var gr = new GlideRecord(table);
+			gr.get(sys_id);
+			return gr.getValue(column);
+		} else if (operation == "delete") {
+			var gr2 = new GlideRecord(table);
+			gr2.get(sys_id);
+			gr2.deleteRecord();
+		}else if (operation == "insert") {
+			var gr3 = new GlideRecord(table);
+			var col1 = this.getParameter("sysparam_col1");
+			var vl1 = this.getParameter("sysparam_vl1");
+			var col2= this.getParameter("sysparam_col2");
+			var vl2=this.getParameter("sysparam_vl2");
+			gr3.initialize();
+			gr3.setValue(col1,vl1);
+			gr3.setValue(col2,vl2);
+			gr3.insert();
+			
+		}
+		
+}
+    //type: 'BlogUtilAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-05 11:32:46</sys_created_on>
+        <sys_id>d1209bf843241110c13b24a2ecb8f2c2</sys_id>
+        <sys_name>BlogUtilAjax</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_script_include_d1209bf843241110c13b24a2ecb8f2c2</sys_update_name>
+    </sys_script_include>
+</record_update>
