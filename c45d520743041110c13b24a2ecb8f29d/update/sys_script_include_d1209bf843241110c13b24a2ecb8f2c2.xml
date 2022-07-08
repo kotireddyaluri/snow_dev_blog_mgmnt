@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>package_private</access>
+        <access>public</access>
         <active>true</active>
         <api_name>sn_blog_management.BlogUtilAjax</api_name>
         <caller_access/>
@@ -10,15 +10,17 @@
         <script><![CDATA[var BlogUtilAjax = Class.create();
 BlogUtilAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	titleExists: function(){
-		var title = this.getParameter("sysparam_title");
-		var author = this.getParameter("sysparam_author");
-		var current = this.getParameter("sysparam_current") || "-1";
+		var title = this.getParameter("sysparm_title");
+		var author = this.getParameter("sysparm_author");
+		var current = this.getParameter("sysparm_current") || "-1";
 		
-		var blog = new GlideRecord("sn_blog_management_blog_post");
+		
+		var blog = new GlideRecordSecure("sn_blog_management_blog_post");
 		blog.addQuery("title",title);
 		blog.addQuery("sys_id","!=",current);
-		if("" != author)
-			blog.addQuery("author",author);
+		
+		if("" != author && gs.hasRole('sn_blog_management.author'))
+			blog.addQuery("author",gs.getUserID());
 		blog.query();
 		if(blog.next())
 			return blog.getValue("sys_id");
@@ -26,10 +28,10 @@ BlogUtilAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	},
 	
 	getTitleDetails: function(){
-		var table = this.getParameter("sysparam_table");
-		var sys_id = this.getParameter("sysparam_id");
-		var column = this.getParameter("sysparam_column");
-		var operation = this.getParameter("sysparam_operation");
+		var table = this.getParameter("sysparm_table");
+		var sys_id = this.getParameter("sysparm_id");
+		var column = this.getParameter("sysparm_column");
+		var operation = this.getParameter("sysparm_operation");
 		
 		if(operation == "read"){
 			var gr = new GlideRecord(table);
@@ -41,10 +43,10 @@ BlogUtilAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			gr2.deleteRecord();
 		}else if (operation == "insert") {
 			var gr3 = new GlideRecord(table);
-			var col1 = this.getParameter("sysparam_col1");
-			var vl1 = this.getParameter("sysparam_vl1");
-			var col2= this.getParameter("sysparam_col2");
-			var vl2=this.getParameter("sysparam_vl2");
+			var col1 = this.getParameter("sysparm_col1");
+			var vl1 = this.getParameter("sysparm_vl1");
+			var col2= this.getParameter("sysparm_col2");
+			var vl2=this.getParameter("sysparm_vl2");
 			gr3.initialize();
 			gr3.setValue(col1,vl1);
 			gr3.setValue(col2,vl2);
@@ -52,8 +54,25 @@ BlogUtilAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			
 		}
 		
-}
-    //type: 'BlogUtilAjax'
+    },
+	
+	getUserManager: function(user){
+		var user_gr = new GlideRecord("sys_user");
+		user_gr.get(user);
+		return user_gr.getValue("manager");
+	},
+	
+	getIncidentShortDesc: function(incident,sys_id){
+		var incident_gr = new GlideRecord("incident");
+		incident_gr.get(sys_id);
+		return incident_gr.getValue("short_description");
+	},
+	
+	isPublic: function(){
+		return true;
+	},
+	
+    type: 'BlogUtilAjax'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>

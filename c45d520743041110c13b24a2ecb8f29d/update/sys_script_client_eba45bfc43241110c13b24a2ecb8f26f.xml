@@ -21,16 +21,17 @@
 	
 	//check if the same title exists
 	var util = new GlideAjax("BlogUtilAjax");
-	util.setScope("sn_blog_management_blog_post");
-	util.addParam("sysparam_name","titleExists");
-	util.addParam("sysparam_title",g_form.getValue("title"));
-	util.addParam("sysparam_author",g_user.userID);
-	util.addParam("sysparam_current",g_form.getUniqueValue());
+	util.setScope("sn_blog_management");
+	util.addParam("sysparm_name","titleExists");
+	util.addParam("sysparm_title",g_form.getValue("title"));
+	util.addParam("sysparm_author",g_user.userID);
+	util.addParam("sysparm_current",g_form.getUniqueValue());
 	util.getXML(sameTitle);
 }
 
 function sameTitle(response){
 	var sys_id = response.responseXML.documentElement.getAttribute("answer");
+	g_form.addInfoMessage(sys_id);
 	if("-1" != sys_id){
 		g_form.addErrorMessage('Warning: There is a <a href="/sn_blog_management_blog_post.do?sys_id='+ sys_id + '" target="_blank">Title</a>exists with the same title!');
 	}
