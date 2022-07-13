@@ -59,6 +59,7 @@ BlogUtilAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	getUserManager: function(user){
 		var user_gr = new GlideRecord("sys_user");
 		user_gr.get(user);
+		gs.info("getUserManager() called..");
 		return user_gr.getValue("manager");
 	},
 	
