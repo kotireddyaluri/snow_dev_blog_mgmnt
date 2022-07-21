@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>sn_blog_management_blog_list.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="null" xmlns:g="null" xmlns:j2="jelly:core" xmlns:g2="glide">
+	<style>
+		table, td{
+		padding: 3px;
+		}
+	</style>
+	<h3>Recent 10 Blogs</h3>
+	<g2:evaluate var="jvar_gr" object="true">
+		var gr = new GlideRecord('sn_blog_management_blog_post');
+		gr.query();
+		gr.setLimit(10);
+		gr;
+	</g2:evaluate>
+	<table border="1" cellspacing="2">
+		<j2:if test="${jvar_gr.hasNext()}">
+			<tr>
+				<td>Title</td>
+				<td>Author</td>
+			</tr>
+			<g2:no_escape>
+				<j2:while test="${jvar_gr.next()}">
+					<tr>
+						<td><a href='/' target="_blank">${jvar_gr.getValue('title')}</a></td>
+							<td>${jvar_gr.getValue('author')}</td>
+					</tr>
+				</j2:while>
+			</g2:no_escape>
+		</j2:if>
+	</table>
+</j:jelly>]]></html>
+        <name>blog_list</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-21 04:41:57</sys_created_on>
+        <sys_id>a197844643301110c13b24a2ecb8f2e4</sys_id>
+        <sys_name>blog_list</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_ui_page_a197844643301110c13b24a2ecb8f2e4</sys_update_name>
+    </sys_ui_page>
+</record_update>
