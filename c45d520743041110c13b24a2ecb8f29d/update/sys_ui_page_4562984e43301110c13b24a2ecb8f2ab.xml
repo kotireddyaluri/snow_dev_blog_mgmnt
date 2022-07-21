@@ -11,7 +11,7 @@
 	${sysparm_preview_token} -->
 	<g2:evaluate var="jvar_gr" object="true">
 		var gr = new GlideRecord('sn_blog_management_blog_post');
-		gr.addQuery('title', '${sysparm_title}');
+		<!-- gr.addQuery('title', '${sysparm_title}'); -->
 		gr.addQuery('preview_token', '${sysparm_preview_token}');
 		gr.query();
 		gr;
@@ -26,11 +26,11 @@
 			</tr>
 				<j2:while test="${jvar_gr.next()}">
 					<tr>
-						<td>${jvar_gr.getValue('title')}</td>
+						<td><g2:no_escape>${jvar_gr.getValue('title')}</g2:no_escape></td>
 						<td>${jvar_gr.getValue('author')}</td>
 						<td>${jvar_gr.getValue('state')}</td>
 					</tr>
-					<tr><td colspan="3">${jvar_gr.getValue('body')}</td></tr>
+					<tr><td colspan="3"><g2:no_escape>${jvar_gr.getValue('body')}</g2:no_escape></td></tr>
 				</j2:while>
 		</j2:if>
 	</table>
@@ -42,10 +42,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-21 05:22:34</sys_created_on>
         <sys_id>4562984e43301110c13b24a2ecb8f2ab</sys_id>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>preview_blog</sys_name>
         <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
         <sys_update_name>sys_ui_page_4562984e43301110c13b24a2ecb8f2ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-21 06:58:33</sys_updated_on>
     </sys_ui_page>
 </record_update>

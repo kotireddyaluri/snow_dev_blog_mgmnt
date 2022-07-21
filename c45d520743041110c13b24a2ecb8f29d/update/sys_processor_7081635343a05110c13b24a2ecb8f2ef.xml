@@ -9,7 +9,7 @@
         <params_endpoint/>
         <path>blog_servlet</path>
         <path_endpoint>sn_blog_management_blog_servlet</path_endpoint>
-        <require_csrf>true</require_csrf>
+        <require_csrf>false</require_csrf>
         <roles>snc_internal</roles>
         <script><![CDATA[(function process(g_request, g_response, g_processor) {
 
@@ -38,6 +38,9 @@
 				g_processor.writeOutput("Not Found!");
 			}
 		}
+	else{
+		g_processor.writeOutput("pass the parameters..")
+	}
 	
 
 })(g_request, g_response, g_processor);]]></script>
@@ -45,12 +48,15 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-13 07:13:52</sys_created_on>
         <sys_id>7081635343a05110c13b24a2ecb8f2ef</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>blog_servlet</sys_name>
         <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
         <sys_update_name>sys_processor_7081635343a05110c13b24a2ecb8f2ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-21 10:43:35</sys_updated_on>
         <type>script</type>
-        <xframe_sameorigin>true</xframe_sameorigin>
+        <xframe_sameorigin>false</xframe_sameorigin>
     </sys_processor>
 </record_update>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_public">
+    <sys_public action="DELETE">
+        <active>true</active>
+        <page>sn_blog_management_blog_servlet</page>
+        <sys_class_name>sys_public</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-21 10:41:53</sys_created_on>
+        <sys_id>e07e1d4e18b01110f87788ceb5dd917d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>sn_blog_management_blog_servlet</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_public_e07e1d4e18b01110f87788ceb5dd917d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-21 10:44:48</sys_updated_on>
+    </sys_public>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</application>
+        <file_path/>
+        <instance_id>a221d540a8301110f8778fd0b995d71c</instance_id>
+        <instance_name>instance-a221d540a8301110f8778fd0b995d71c</instance_name>
+        <name>sys_public_e07e1d4e18b01110f87788ceb5dd917d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_public"><sys_public action="INSERT_OR_UPDATE"><active>true</active><page>sn_blog_management_blog_servlet</page><sys_class_name>sys_public</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-21 10:41:53</sys_created_on><sys_id>e07e1d4e18b01110f87788ceb5dd917d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>sn_blog_management_blog_servlet</sys_name><sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package><sys_policy/><sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope><sys_update_name>sys_public_e07e1d4e18b01110f87788ceb5dd917d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-07-21 10:44:48</sys_updated_on></sys_public></record_update>]]></payload>
+        <payload_hash>579031177</payload_hash>
+        <record_name>sn_blog_management_blog_servlet</record_name>
+        <reverted_from/>
+        <source>028d94822c70d110f877eefa9e126a89</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-21 10:44:48</sys_created_on>
+        <sys_id>2c2fdd4e18b01110f87788ceb5dd9127</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182205c2e910000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-21 10:44:48</sys_updated_on>
+        <type>Public Pages</type>
+        <update_guid>642fdd4e40b01110eee5aced4714fd27</update_guid>
+        <update_guid_history>642fdd4e40b01110eee5aced4714fd27:579031177,3d7edd4e19b0111040f5bb4c64f1b8de:-1130647545</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-21 10:48:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_public">sys_public</sys_db_object>
+        <sys_id>5ba41ad24547428391fed0755a6b2a79</sys_id>
+        <sys_metadata>e07e1d4e18b01110f87788ceb5dd917d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_blog_management_blog_servlet</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_scope_delete display_value="">08fbee7fcad34dee82f3c0a762de72e4</sys_scope_delete>
+        <sys_update_name>sys_public_e07e1d4e18b01110f87788ceb5dd917d</sys_update_name>
+        <sys_update_version display_value="sys_public_e07e1d4e18b01110f87788ceb5dd917d">2c2fdd4e18b01110f87788ceb5dd9127</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-21 10:48:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

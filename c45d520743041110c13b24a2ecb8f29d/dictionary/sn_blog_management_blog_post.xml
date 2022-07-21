@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="848e9a4743041110c13b24a2ecb8f212" label="Blog Post" max_length="40" name="sn_blog_management_blog_post" type="collection">
+    <element label="Blog Post" max_length="40" name="sn_blog_management_blog_post" sizeclass="4" type="collection">
         <element attributes="encode_utf8=false" label="Author" max_length="32" name="author" reference="sys_user" type="reference"/>
         <element label="Body" max_length="65536" name="body" type="html"/>
         <element label="Preview token" max_length="100" name="preview_token" type="string"/>
@@ -13,7 +13,7 @@
             </choice>
         </element>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
-        <element attributes="edge_encryption_enabled=true" label="Title" max_length="100" name="title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Title" max_length="1000" name="title" type="string"/>
         <index name="index">
             <element name="author"/>
         </index>

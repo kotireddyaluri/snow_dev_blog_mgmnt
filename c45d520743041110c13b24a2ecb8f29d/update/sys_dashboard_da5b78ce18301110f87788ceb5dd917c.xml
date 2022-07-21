@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dashboard">
+    <sys_dashboard action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cell_height>250</cell_height>
+        <cell_width>350</cell_width>
+        <columns/>
+        <name/>
+        <roles/>
+        <rows/>
+        <sys_class_name>sys_dashboard</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-21 08:08:27</sys_created_on>
+        <sys_id>da5b78ce18301110f87788ceb5dd917c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_dashboard_da5b78ce18301110f87788ceb5dd917c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-21 08:08:27</sys_updated_on>
+    </sys_dashboard>
+</record_update>
