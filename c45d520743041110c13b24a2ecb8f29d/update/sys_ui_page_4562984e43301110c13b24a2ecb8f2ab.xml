@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>sn_blog_management_preview_blog.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="null" xmlns:g="null" xmlns:j2="jelly:core" xmlns:g2="glide">
+	<!--${sysparm_title}
+	${sysparm_preview_token} -->
+	<g2:evaluate var="jvar_gr" object="true">
+		var gr = new GlideRecord('sn_blog_management_blog_post');
+		gr.addQuery('title', '${sysparm_title}');
+		gr.addQuery('preview_token', '${sysparm_preview_token}');
+		gr.query();
+		gr;
+	</g2:evaluate>
+	
+	<table border="1" cellspacing="2">
+		<j2:if test="${jvar_gr.hasNext()}">
+			<tr>
+				<td>Title</td>
+				<td>Author</td>
+				<td>State</td>
+			</tr>
+				<j2:while test="${jvar_gr.next()}">
+					<tr>
+						<td>${jvar_gr.getValue('title')}</td>
+						<td>${jvar_gr.getValue('author')}</td>
+						<td>${jvar_gr.getValue('state')}</td>
+					</tr>
+					<tr><td colspan="3">${jvar_gr.getValue('body')}</td></tr>
+				</j2:while>
+		</j2:if>
+	</table>
+</j:jelly>
+]]></html>
+        <name>preview_blog</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-21 05:22:34</sys_created_on>
+        <sys_id>4562984e43301110c13b24a2ecb8f2ab</sys_id>
+        <sys_name>preview_blog</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_ui_page_4562984e43301110c13b24a2ecb8f2ab</sys_update_name>
+    </sys_ui_page>
+</record_update>
