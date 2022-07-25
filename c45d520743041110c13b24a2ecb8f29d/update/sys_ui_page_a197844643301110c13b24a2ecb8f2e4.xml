@@ -19,6 +19,8 @@
 		gr.setLimit(10);
 		gr;
 	</g2:evaluate>
+	<j2:set var="jvar_title" value="${sysparm_title}"/>
+	sysparm_title is : ${jvar_title}
 	<table border="1" cellspacing="2">
 		<j2:if test="${jvar_gr.hasNext()}">
 			<tr>

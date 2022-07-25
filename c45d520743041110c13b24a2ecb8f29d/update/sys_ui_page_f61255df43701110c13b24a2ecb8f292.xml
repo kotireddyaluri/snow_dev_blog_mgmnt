@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>sn_blog_management_ui_page_processing_script.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="null" xmlns:g="null" xmlns:j2="jelly:core" xmlns:g2="glide">
+	<!--<g:ui_form>
+		What's the title? <input name="title"/><input name="user"/><input type="submit"/>
+ </g:ui_form>-->
+	<g2:ui_form>
+		Provide email_id <input name="email"/><input type="submit"/>
+	</g2:ui_form>
+</j:jelly>]]></html>
+        <name>ui_page_processing_script</name>
+        <processing_script><![CDATA[// var t = title;
+// var gr = new GlideRecord('sn_blog_management_blog_post');
+// gr.initialize();
+// gr.setValue('title',t);
+// gr.setValue('author',gs.getUserID());
+// gr.setValue('state','draft');
+// gr.insert();
+// gs.addInfoMessage(title + " has been created");
+// response.sendRedirect("/sn_blog_management_blog_post_list.do");
+
+//abel.tuter@example.com
+
+var e = email;
+var gr_user = new GlideRecord('sys_user');
+gr_user.addQuery('email', e);
+gr_user.query();
+var user_sysid = '';
+if(gr_user.hasNext())
+	{
+		while(gr_user.next())
+		{
+			user_sysid = gr_user.getValue('sys_id');
+		}
+	}
+
+
+var gr_role = new GlideRecord('sys_user_role');
+gr_role.addQuery('name', 'sn_blog_management.author');
+gr_role.query();
+var role_sysid = '';
+if(gr_role.hasNext())
+	{
+		while(gr_role.next())
+		{
+			role_sysid = gr_role.getValue('sys_id');
+		}
+	}
+
+
+var gr_user_role = new GlideRecord('sys_user_has_role');
+gr_user_role.initialize();
+gr_user_role.setValue('user',user_sysid);
+gr_user_role.setValue('role',role_sysid);
+gr_user_role.insert();
+gs.addInfoMessage(user_id + " has been created");
+response.sendRedirect("/sys_user_has_role_list.do");]]></processing_script>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-25 07:09:46</sys_created_on>
+        <sys_id>f61255df43701110c13b24a2ecb8f292</sys_id>
+        <sys_name>ui_page_processing_script</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_ui_page_f61255df43701110c13b24a2ecb8f292</sys_update_name>
+    </sys_ui_page>
+</record_update>
