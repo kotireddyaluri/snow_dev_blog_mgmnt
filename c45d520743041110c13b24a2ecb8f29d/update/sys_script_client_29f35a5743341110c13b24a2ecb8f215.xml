@@ -14,15 +14,18 @@
    if (isLoading || newValue === '') {
       return;
    }
-
+	
    //Type appropriate comment here, and begin script below
-	if(newValue == "retired"){
-		var content = "<b>You are about to mark "+g_form.getValue("title") +" retired</b>";
-		var gm = new GlideModel();
+	if(newValue == "retired")
+	{
+		var content = "<b>You are about to mark "+g_form.getValue('title') +" retired</b>";
+		var gm = new GlideModal();
 		gm.setTitle("confirm");
 		gm.setWidth(550);
 		gm.renderWithContent(content);
+		return true;
 	}
+	
    
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -39,7 +42,7 @@
         <sys_update_name>sys_script_client_29f35a5743341110c13b24a2ecb8f215</sys_update_name>
         <table>sn_blog_management_blog_post</table>
         <type>onChange</type>
-        <ui_type>0</ui_type>
+        <ui_type>10</ui_type>
         <view/>
     </sys_script_client>
 </record_update>
