@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Default GET</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>rest_outbound [ Default GET ]</qualified_name>
+        <rest_endpoint>file:///etc/passwd</rest_endpoint>
+        <rest_message display_value="rest_outbound">3af08f2f43f01110c13b24a2ecb8f2f1</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 09:44:02</sys_created_on>
+        <sys_id>d721c32f43f01110c13b24a2ecb8f25c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_rest_message_fn_d721c32f43f01110c13b24a2ecb8f25c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-26 09:44:02</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</application>
+        <file_path/>
+        <instance_id>b624113dcd301110a89c1b240f885884</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_rest_message_fn_d721c32f43f01110c13b24a2ecb8f25c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Default GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>rest_outbound [ Default GET ]</qualified_name><rest_endpoint>file:///etc/passwd</rest_endpoint><rest_message display_value="rest_outbound">3af08f2f43f01110c13b24a2ecb8f2f1</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-26 09:44:02</sys_created_on><sys_id>d721c32f43f01110c13b24a2ecb8f25c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Default GET</sys_name><sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package><sys_policy/><sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope><sys_update_name>sys_rest_message_fn_d721c32f43f01110c13b24a2ecb8f25c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-07-26 09:44:02</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>-1870162539</payload_hash>
+        <record_name>Default GET</record_name>
+        <reverted_from/>
+        <source>7dd91e9b43341110c13b24a2ecb8f20f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 09:44:03</sys_created_on>
+        <sys_id>1f21436f43f01110c13b24a2ecb8f250</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18239e45af10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-26 09:44:03</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>1f21c32fa0f01110d6512c09cad9915e</update_guid>
+        <update_guid_history>1f21c32fa0f01110d6512c09cad9915e:-1870162539</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 09:50:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>37e70a14103e48308d25b85a28309900</sys_id>
+        <sys_metadata>d721c32f43f01110c13b24a2ecb8f25c</sys_metadata>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_scope_delete display_value="">08fbee7fcad34dee82f3c0a762de72e4</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_d721c32f43f01110c13b24a2ecb8f25c</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_d721c32f43f01110c13b24a2ecb8f25c">1f21436f43f01110c13b24a2ecb8f250</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

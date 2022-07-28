@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>list</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+	var writer = response.getStreamWriter(),
+        hdrs = {},
+        table = 'sn_blog_management_blog_post',
+        record_limit = 100,
+        now_GR = new GlideRecordSecure(table);
+
+
+    hdrs['Content-Type'] = 'application/json';
+    response.setStatus(200);
+    response.setHeaders(hdrs);
+
+    now_GR.setLimit(record_limit);
+    now_GR.query();
+	
+	//  start building response object
+    writer.writeString("{\"results\":[");
+
+
+    //  iterate over incident records and build JSON representations to be streamed out.
+    while (now_GR.next()) {
+        var blogObj = {};
+
+        blogObj.title = now_GR.title + '';
+        blogObj.body = now_GR.body + '';
+        writer.writeString(global.JSON.stringify(blogObj));
+
+        if (now_GR.hasNext()) {
+            writer.writeString(",");
+        }
+    }
+
+    //  close the response object
+    writer.writeString("]}");
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/sn_blog_management/blog_list/list</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/list</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 08:52:17</sys_created_on>
+        <sys_id>6415fae343f01110c13b24a2ecb8f26f</sys_id>
+        <sys_name>list</sys_name>
+        <sys_package display_value="Blog Management" source="sn_blog_management">c45d520743041110c13b24a2ecb8f29d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blog Management">c45d520743041110c13b24a2ecb8f29d</sys_scope>
+        <sys_update_name>sys_ws_operation_6415fae343f01110c13b24a2ecb8f26f</sys_update_name>
+        <web_service_definition display_value="blog_list">5784b2e343f01110c13b24a2ecb8f2bf</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
